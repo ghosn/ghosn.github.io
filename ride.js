@@ -35,8 +35,9 @@ var myJSONObject = [
 
 
     var mapOptions = {
-        zoom: 13,
-        center: new google.maps.LatLng(37.448274, -122.122198),
+        zoom: 12,
+        //center: new google.maps.LatLng(37.448274, -122.122198),
+        center: new google.maps.LatLng(37.375068,-121.966095),
         mapTypeId: google.maps.MapTypeId.TERRAIN
     };
 
