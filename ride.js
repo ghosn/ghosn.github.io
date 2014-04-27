@@ -49,7 +49,7 @@ var myJSONObject = [
         myJSONObject = data.nodes;
         $.each(myJSONObject, function(idx, obj) {
             var rgbClr = '#292'; 
-            if(obj.Eff < 15) {
+            if(obj.Eff < 4) {
                 rgbClr = '#F00';
             } 
             // [START region_polyline]
