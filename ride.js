@@ -44,12 +44,12 @@ var myJSONObject = [
     var map = new google.maps.Map(document.getElementById('map-canvas'), mapOptions);
 
     //Loading drive.json from root
-    $.getJSON('ev_data.json')
+    $.getJSON('aggregate.json')
     .done(function (data) {
         myJSONObject = data.nodes;
         $.each(myJSONObject, function(idx, obj) {
             var rgbClr = '#292'; 
-            if(obj.Eff > 4) {
+            if(obj.Eff < 4) {
                 rgbClr = '#F00';
             } 
             // [START region_polyline]
